@@ -1,24 +1,125 @@
-/* pages/ProductList.css */
+/* =============================================
+   ShoppyGlobe — Product List Page
+   Aesthetic: Refined luxury editorial
+   ============================================= */
 
 .product-list-page {
-  padding-top: var(--space-2xl);
-  padding-bottom: var(--space-3xl);
+  padding-block: var(--space-3xl);
+  min-height: 80vh;
 }
 
+/* ---- List Header (Title & Controls) ---- */
 .product-list-header {
-  margin-bottom: var(--space-2xl);
+  margin-bottom: var(--space-3xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  border-bottom: 1px solid var(--clr-border);
+  padding-bottom: var(--space-xl);
 }
 
-/* Responsive grid */
+.product-list-title {
+  font-family: var(--font-display);
+  font-size: var(--fs-xl);
+  font-weight: 500;
+  color: var(--clr-text-primary);
+  line-height: 1;
+}
+
+.product-list-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.results-count {
+  font-size: var(--fs-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--clr-text-muted);
+}
+
+/* Minimalist Sort/Filter Bar Placeholder */
+.list-controls {
+  display: flex;
+  gap: var(--space-lg);
+  font-size: var(--fs-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.list-controls span:hover {
+  color: var(--clr-accent);
+}
+
+/* ---- Modern Responsive Grid ---- */
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: var(--space-lg);
+  /* Use auto-fill with a minimum size that prevents items from looking too small */
+  grid-template-columns: repeat(auto-fill, minmax(clamp(250px, 20vw, 320px), 1fr));
+  gap: var(--space-xl) var(--space-lg);
+  
+  /* Entrance Animation */
+  animation: listFadeIn 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-@media (max-width: 480px) {
+/* ---- Mobile Adjustments ---- */
+@media (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .product-list-page {
+    padding-top: var(--space-xl);
+  }
+
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: var(--space-md);
   }
+  
+  .product-list-header {
+    margin-bottom: var(--space-xl);
+    text-align: center;
+  }
+  
+  .product-list-meta {
+    justify-content: center;
+  }
+}
+
+/* Very Small Devices */
+@media (max-width: 400px) {
+  .product-grid {
+    grid-template-columns: 1fr; /* Single column for focus on small phones */
+  }
+}
+
+/* ---- Animations ---- */
+@keyframes listFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Empty State Styling (if no products found) */
+.product-list-empty {
+  grid-column: 1 / -1;
+  padding: var(--space-3xl) 0;
+  text-align: center;
+  border: 1px dashed var(--clr-border);
+  color: var(--clr-text-secondary);
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
 }
