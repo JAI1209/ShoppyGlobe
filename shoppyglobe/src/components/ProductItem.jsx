@@ -99,4 +99,15 @@ const ProductItem = ({ product }) => {
   );
 };
 
+ProductItem.propTypes = {
+  product: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    thumbnail: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+    rating: PropTypes.number,
+  }).isRequired,
+};
+
 export default ProductItem;
