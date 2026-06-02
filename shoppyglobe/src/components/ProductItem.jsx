@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../redux/cartSlice';
+import PropTypes from 'prop-types';
 import './ProductItem.css';
 
 // Helper to render star rating

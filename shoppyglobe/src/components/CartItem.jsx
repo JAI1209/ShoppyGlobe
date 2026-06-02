@@ -8,6 +8,7 @@ import {
   decrementQuantity,
 } from '../redux/cartSlice';
 import './CartItem.css';
+import PropTypes from 'prop-types';
 
 const CartItem = ({ item }) => {
   const dispatch = useDispatch();
@@ -77,4 +78,15 @@ const CartItem = ({ item }) => {
   );
 };
 
+
+CartItem.propTypes = {
+  item: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+    thumbnail: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+    quantity: PropTypes.number.isRequired,
+  }).isRequired,
+};
 export default CartItem;
