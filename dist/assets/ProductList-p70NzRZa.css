@@ -1,1 +1,0 @@
-.product-list-page{padding-top:var(--space-2xl);padding-bottom:var(--space-3xl)}.product-list-header{margin-bottom:var(--space-2xl)}.product-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:var(--space-lg)}@media (max-width: 480px){.product-grid{grid-template-columns:repeat(2,1fr);gap:var(--space-md)}}

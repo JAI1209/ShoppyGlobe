@@ -2,7 +2,7 @@
 
 A modern, responsive e-commerce application built with **React + Vite**, featuring Redux state management, dynamic routing, lazy loading, and a complete checkout flow.
 
-> **Repository:** https://github.com/yourusername/shoppyglobe
+> **Repository:** https://github.com/JAI1209/ShoppyGlobe
 
 ---
 
@@ -77,7 +77,7 @@ shoppyglobe/
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/shoppyglobe.git
+git clone https://github.com/JAI1209/ShoppyGlobe.git
 cd shoppyglobe
 
 # Install dependencies
@@ -201,3 +201,8 @@ This project maintains 25+ meaningful commits covering:
 ## 📄 License
 
 MIT — feel free to use this project for learning and portfolio purposes.
+
+
+#screenshots 
+
+![alt text](image.png)
