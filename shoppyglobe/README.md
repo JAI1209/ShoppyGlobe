@@ -162,41 +162,19 @@ The UI uses CSS custom properties for a consistent design language:
 - **useMemo** — Search filtering is memoized to avoid re-computation
 
 ---
+git commits 
+https://github.com/JAI1209/ShoppyGlobe/commits/main/
 
-## 📝 Git Commit History
 
-This project maintains 25+ meaningful commits covering:
-
-1. `init: scaffold Vite + React project`
-2. `feat: add global CSS design system and variables`
-3. `feat: create Redux store with toolkit`
-4. `feat: implement cartSlice with add/remove/quantity actions`
-5. `feat: implement searchSlice for global search state`
-6. `feat: create useProducts custom hook with AbortController`
-7. `feat: build Header component with logo, nav, and search`
-8. `style: add Header responsive CSS with mobile menu`
-9. `feat: create ProductItem card component`
-10. `style: add ProductItem CSS with hover animations`
-11. `feat: build ProductList page with grid layout`
-12. `feat: connect ProductList search to Redux state`
-13. `feat: create ProductDetail page with dynamic routing`
-14. `feat: add image gallery with thumbnail strip to ProductDetail`
-15. `feat: implement CartItem component with quantity controls`
-16. `style: add CartItem responsive CSS`
-17. `feat: build Cart page with order summary sidebar`
-18. `feat: add free shipping threshold progress to Cart`
-19. `feat: create Checkout page with form validation`
-20. `feat: add payment field auto-formatting to Checkout`
-21. `feat: implement order placement flow with cart clear + redirect`
-22. `feat: add order success screen to Checkout`
-23. `feat: create NotFound 404 page`
-24. `feat: configure AppRouter with createBrowserRouter`
-25. `perf: add React.lazy + Suspense code splitting to all routes`
-26. `docs: add comprehensive README`
-27. `fix: handle image load errors with fallback placeholders`
-28. `style: polish mobile responsiveness across all pages`
-
----
+1. 06f68f9faea62bfdd0829d432f2de6714ca4ed0f
+2. 569d28f7638cc7edfb2c1d384753dcd01f93af1b
+3. e46d3eb1c3f74b1e63b3465c36238a0f275e2c08
+4. 1c5ea367f28a06c0b4f5890e5ca4f4784af256f9
+5. 555f094051e9387b0d1451d0009a94c270099abc
+6. 5da6d601b8b50ebad5363f50b96dfba29c5e189b
+7. 7333c85205f0d6d96cc0504e9ecaf162a0496014
+8. 2e07d83f047a2baceef5bb037193014372c7c4c1
+and till 18 commits of 25 you can tap commits link
 
 ## 📄 License
 
